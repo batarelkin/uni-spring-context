@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.16.16'
+    compile 'javax.inject:javax.inject:1'
+    compile 'org.springframework:spring-context:4.3.7.RELEASE'
+}
