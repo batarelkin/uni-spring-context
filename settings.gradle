@@ -16,3 +16,8 @@ include 'services:webservice'
 */
 
 rootProject.name = 'spring-context-example'
+include 'sample1'
+include 'sample2'
+include 'sample3-profiles'
+include 'sample4-profiling'
+
