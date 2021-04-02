@@ -8,7 +8,7 @@ import com.example.spring.sample4.config.AuthoscanConfig;
 import com.example.spring.sample4.services.UserServiceTest;
 import com.example.spring.sample4.services.impl.UserServicesTestImpl;
 
-public class Application {
+public class Application4 {
 
     private static ApplicationContext configWithoutBean() {
         return new AnnotationConfigApplicationContext(AuthoscanConfig.class);

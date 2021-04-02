@@ -1,11 +1,11 @@
-package com.example.spring.sample3;
+package com.example.spring.sample2;
 
-import com.example.spring.sample3.config.AutoscanConfig;
-import com.example.spring.sample3.services.UserServiceTest;
+import com.example.spring.sample2.config.AutoscanConfig;
+import com.example.spring.sample2.services.UserServiceTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Application {
+public class Application3 {
 
     private static ApplicationContext configWithBean() {
         return new AnnotationConfigApplicationContext(AutoscanConfig.class);
@@ -16,7 +16,6 @@ public class Application {
         ApplicationContext context = configWithBean();
         UserServiceTest userService = context.getBean(UserServiceTest.class);
         userService.testUserService();
-
     }
 
 }

@@ -1,23 +1,24 @@
-package com.example.spring.sample3.services.impl;
+package com.example.spring.sample2.services.impl;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import com.example.spring.sample2.model.User;
+import com.example.spring.sample2.services.UserService;
+import com.example.spring.sample2.services.UserServiceTest;
 
-import com.example.spring.sample3.model.User;
-import com.example.spring.sample3.services.UserService;
-import com.example.spring.sample3.services.UserServiceTest;
+public class BaseUserServicesTest implements UserServiceTest {
 
-@Named
-//@Component
-public class InMemoryUserServiceTest implements UserServiceTest {
-    
-    @Inject
-    @Named("inMemoryUserService")
-    private UserService userService;
-    
+    private UserService service;
+
+    public BaseUserServicesTest(UserService service) {
+        this.service = service;
+    }
+
     @Override
     public void testUserService() {
-        System.out.println("InMemoryUserServiceTest");
+        test(service);
+    }
+
+    private void test(UserService userService) {
+        System.out.println("AllUserServicesTest");
         System.out.println("Тестируем создание пользователя");
         User user = userService.createUser(new User(0, "login1", "Виктор Потапов"));
         System.out.println(String.format("Создан пользователь: %s", user.toString()));

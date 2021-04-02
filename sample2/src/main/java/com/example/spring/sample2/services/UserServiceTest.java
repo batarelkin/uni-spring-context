@@ -1,4 +1,4 @@
-package com.example.spring.sample3.services;
+package com.example.spring.sample2.services;
 
 /**
  * Тестирует работу с пользователями

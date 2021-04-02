@@ -1,6 +1,6 @@
-package com.example.spring.sample3.services;
+package com.example.spring.sample2.services;
 
-import com.example.spring.sample3.model.User;
+import com.example.spring.sample2.model.User;
 
 /**
  * Сервис по работе с пользователями

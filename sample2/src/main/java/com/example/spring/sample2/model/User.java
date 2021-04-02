@@ -1,4 +1,4 @@
-package com.example.spring.sample3.model;
+package com.example.spring.sample2.model;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

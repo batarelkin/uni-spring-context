@@ -1,8 +1,8 @@
-package com.example.spring.sample3.services.impl;
+package com.example.spring.sample2.services.impl;
 
-import com.example.spring.sample3.model.User;
-import com.example.spring.sample3.services.UserService;
-import com.example.spring.sample3.services.UserServiceTest;
+import com.example.spring.sample2.model.User;
+import com.example.spring.sample2.services.UserService;
+import com.example.spring.sample2.services.UserServiceTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

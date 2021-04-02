@@ -1,12 +1,12 @@
-package com.example.spring.sample3;
+package com.example.spring.sample2;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.example.spring.sample3.services.UserServiceTest;
-import com.example.spring.sample3.config.BeanConfig;
+import com.example.spring.sample2.services.UserServiceTest;
+import com.example.spring.sample2.config.BeanConfig;
 
-public class Application {
+public class Application2 {
 
     private static ApplicationContext configWithBean() {
         return new AnnotationConfigApplicationContext(BeanConfig.class);

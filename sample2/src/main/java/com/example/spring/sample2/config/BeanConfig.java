@@ -1,12 +1,12 @@
-package com.example.spring.sample3.config;
+package com.example.spring.sample2.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.example.spring.sample3.services.UserService;
-import com.example.spring.sample3.services.UserServiceTest;
-import com.example.spring.sample3.services.impl.BaseUserServicesTest;
-import com.example.spring.sample3.services.impl.InMemoryUserService;
+import com.example.spring.sample2.services.UserService;
+import com.example.spring.sample2.services.UserServiceTest;
+import com.example.spring.sample2.services.impl.BaseUserServicesTest;
+import com.example.spring.sample2.services.impl.InMemoryUserService;
 
 /**
  * Конфигурация с явным заданием компонентов

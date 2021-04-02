@@ -1,24 +1,18 @@
-package com.example.spring.sample3.services.impl;
+package com.example.spring.sample2.services.impl;
 
-import com.example.spring.sample3.model.User;
-import com.example.spring.sample3.services.UserService;
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
 import java.security.SecureRandom;
 import java.util.Random;
 
-@Component
-@Profile("simple")
+import javax.inject.Named;
+
+import com.example.spring.sample2.model.User;
+import com.example.spring.sample2.services.UserService;
+
+@Named
+//@Component
 public class SimpleUserService implements UserService {
 
     private Random random = new SecureRandom();
-
-    @PostConstruct
-    private void init() {
-        System.out.println("SimpleUserService initialized");
-    }
 
     @Override
     public User getUser(long id) {
